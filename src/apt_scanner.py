@@ -61,7 +61,7 @@ def send_text(apt_time, airport, person):
     client = Client(account_sid, auth_token)
     body = 'Yello, {}! Global Entry Appointment available! {} at {}. Hurry! https://ttp.cbp.dhs.gov/'.format(person, apt_time, airport)
     client.messages.create(body=body, to=to_number, from_=from_number)
-    client.messages.create(body=body, to='7039636549', from_=from_number) # i also send it to myself to ensure that the app is working properly
+    client.messages.create(body=body, to='7035551234', from_=from_number) # i also send it to myself to ensure that the app is working properly
 
 
 def should_send_text(person, code, apt_time):
